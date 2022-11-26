@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- my styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p class="logo">w.</p>
+       
+        <nav>
+          
+          
+          <ul id="navBar">
+            <div class="close_icon" id="closeButton">
+              <img src="./assets/images/icon-menu-close.svg"  alt="">
+            </div>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+        <div class="icon">
+          <img id="openIcon" src="./assets/images/icon-menu.svg" alt="" />
+        </div>
+      </header>
+      <main>
+        <div class="content">
+          <article>
+            <div class="banner__img">
+              <img src="./assets/images/image-web-3-desktop.jpg" alt="" />
+            </div>
+            <div class="title__texts">
+              <h1>The Bright Future of Web 3.0?</h1>
+              <div>
+                <p>
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button>Read More</button>
+              </div>
+            </div>
+          </article>
+          <div class="new__things">
+            <h2>New</h2>
+            <div class="new_things_text">
+              <article>
+                <h4>Hydrogen VS Electric Cars</h4>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </article>
+              <article>
+                <h4>The Downsides of AI Artistry</h4>
+                <p>
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+              <article>
+                <h4>Is VC Funding Drying Up?</h4>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="categories">
+          <div class="category">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+            <div class="category__details">
+              <p class="serial">01</p>
+              <p class="category_title">Reviving Retro PCs</p>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="category">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" />
+            <div class="category__details">
+              <p class="serial">02</p>
+              <p class="category_title">Top 10 Laptops of 2022</p>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="category">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+            <div class="category__details">
+              <p class="serial">03</p>
+              <p class="category_title">The Growth of Gaming</p>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- 
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities. -->
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+  <script>
+    const openButton = document.getElementById("openIcon");
+    const closeButton = document.getElementById("closeButton");
+    const nav = document.getElementById("navBar")
+    openButton.addEventListener('click' , () => {
+        nav.classList.add("active")
+    })
+    closeButton.addEventListener("click" , () => {
+      nav.classList.remove("active")
+    })
+  </script>
+</html>
